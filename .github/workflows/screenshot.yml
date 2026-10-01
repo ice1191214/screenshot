@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: '20'
       - run: |
-          npm ci
+          npm install
           npx playwright install chromium --with-deps
       - run: node capture.js
         env:
